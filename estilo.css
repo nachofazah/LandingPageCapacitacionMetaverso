@@ -1,21 +1,47 @@
+.imagen-fondo {
+    width: 100%;   /* se adapta al ancho del contenedor */
+    height: auto;  /* mantiene proporción */
+    display: block;
+}
+
+
+
+.contenedor {
+    height: auto;
+    width: 100%;   /* ocupa todo el ancho */
+    background-image: url('pixeles.jpg');
+    background-size: cover;      /* la imagen cubre el contenedor */
+    background-position: center; /* centrada */
+    background-repeat: no-repeat;
+    
+    margin: 0;
+    padding: 15px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+}
+
+.contenedor2 {
+    margin-top: 0px;
+    padding: 50px;
+    width: auto;
+    /* Que siempre cubra al menos toda la pantalla */
+    min-height: calc(100vh -  /* header */ 80px - /* footer */ 80px);
+    /* Ajustá los 80px según el alto real de tu header y footer */
+    
+    background-image: linear-gradient(to bottom, #181661, #371c69);
+    display: grid;
+    grid-template-rows: auto auto; /* filas automáticas según contenido */
+    grid-gap: 10px;
+    box-sizing: border-box;
+}
+
 p{
     text-align: center;
     margin: 15px;
     padding-top: 10px;
-}
-
-.contenedor {
-    height: 1000px;
-    width: auto;
-    background-image: url('pixeles.jpg');
-    background-size: auto 100%;
-    background-position: -170px 0;
-    margin-bottom: 0px;
-    padding: 15px;
-    display: grid;
-    grid-template-columns: 1fr 1fr; 
-    grid-template-rows: 1fr 1fr;
-    grid-gap: 10px;
 }
 
 div h1 {
@@ -36,7 +62,8 @@ div h4 {
 }
 
 .info {
-    grid-row: 1 / span 2;
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
     color:white;
     text-align: center;
     transition: all 0.4s ease-in-out;
@@ -44,25 +71,22 @@ div h4 {
 
 
 .info2 {
-    grid-column: 2 / 3;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
     color:white;
     margin-top: 100px;
     transition: all 0.4s ease-in-out;
 }
 
-.contenedor2 {
-    margin-top: 0px;
-    padding: 50px;
-    height: 1000px;
-    width: auto;
-    background-image: linear-gradient(to bottom, #181661, #371c69);
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-gap: 10px;
+.info3 {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    color:white;
+    transition: all 0.4s ease-in-out;
 }
 
 .caja {
-    color:white;
+    color: white;
     text-align: center;
     transition: all 0.4s ease-in-out;
 }
@@ -77,22 +101,46 @@ div h4 {
     background-color: blue;
     border-radius: 5px;
     margin: 20px;
-  }
+}
 
-  #modo {
+#modo {
     margin: 5px;
     border-radius: 25px;
     border-color: indigo;
-  }
+}
 
-  .dark {
+.dark {
     color:black;
-    background-color: rgb(61, 60, 60) ;
-    opacity: 0.7;
-  }
+}
 
+#btnRegistro {
+    display: block;       /* hace que sea un bloque */
+    margin: 0 auto;       /* margen automático a izquierda y derecha */
+}
 
-.darkB {
-    color:white;
-    background-color:rgb(20, 20, 20);
-  }
+/* Margen inferior para el mapa */
+.mapa {
+    margin-bottom: 50px; /* espacio entre mapa y footer */
+}
+
+.formfooter {
+    position: fixed;   /* siempre visible abajo */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;     /* ajusta según tu diseño */
+    text-align: center;
+    background-color: #f5f5f5; /* ejemplo */
+    border: 1px solid black;
+    flex: 0 0 auto;    /* ocupa solo su alto natural */
+    z-index: 1000;     /* que quede por encima del contenido */
+}
+
+/* Sección principal */
+.formbody {
+    flex: 1 0 auto;          /* ocupa todo el espacio disponible */
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto;        /* scroll si el contenido excede */
+    margin-bottom: 80px;     /* reserva espacio igual o mayor al alto del footer */
+}
