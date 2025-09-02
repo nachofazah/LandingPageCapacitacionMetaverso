@@ -16,17 +16,17 @@ el modo oscuro cambia el color de la fuente.
  Existe un segundo archivo register.html el cual cuenta un formulario en el que pueden enviarme un mail a mi, con "tu solicitud para asistir al evento".
 
 
- Hay 2 contenedores cuyos elementos estan distribuidos con grid y un footer que también generamos con bootstrap y editamos a conveniencia.
-en el primero tenemos una invitación, con algún adelanto, fecha y hora, para esta, utilicé una imagen de fondo.
+ Hay 2 contenedores cuyos elementos estan distribuidos con grid.
+En el primero tenemos una invitación, con algún adelanto, fecha y hora, para esta, utilicé una imagen de fondo.
 En la segunda, tenemos un resumen de los temas que se van a ver y un mapa de como llegar, en este casó hice un fondo en degrade de 2 colores.
 
 
- En cuanto a la paleta de colores intente generar un diseño 60% azul 30%violeta y 10% blanco(o negro/gris en el modo oscuro)
-podríamos decir que hay un poco de von restorff efect en cuanto al diseño del primer contenedor dandole prioridad al cuadro que ocupa mas espacio
-intenté darle un buen tamaño a los botones como indica la ley de fitt
-la mayoria de los campos se completan manualmente, y no dan opciones como sugiere la ley de hick
-no desarrollé ningun tipo de acción que denote progreso por lo que no aplique el efecto zeigarnik
-no se si aplican las ideas de proximidad y de region común ya que todos los elementos estan relacionados
+ En cuanto a la paleta de colores intente generar un diseño 60% azul 30%violeta y 10% blanco(o negro/gris en el modo oscuro)  
+Se refleja un poco de von restorff efect en cuanto al diseño del primer contenedor dandole prioridad al cuadro que ocupa mas espacio  
+Intenté darle un buen tamaño a los botones como indica la ley de fitt  
+La mayoria de los campos se completan manualmente, y no dan opciones como sugiere la ley de hick  
+No desarrollé ningun tipo de acción que denote progreso por lo que no aplique el efecto zeigarnik  
+Se aplican las ideas de proximidad y de region común ya que todos los elementos estan relacionados
 
 
 
