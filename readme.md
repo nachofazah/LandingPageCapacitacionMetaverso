@@ -1,27 +1,27 @@
 # LandingPage
 
-el objetivo es generar un sitio web en donde pueda publicitarse una capacitacion y registrarse a la misma
+ El objetivo es generar un sitio web en donde pueda publicitarse una capacitacion y registrarse a la misma
 
 
 ## Estructura del proyecyto
 
- la pagina principal index.html cuenta con  un head donde importamos bootstrap y nuestro hoja de estilo css,
+ La pagina principal index.html cuenta con  un head donde importamos bootstrap y nuestro hoja de estilo css,
 luego nuestras funciones js estan importadas al final del archivo
 en el body tenemos un header con un menu generado con las clases de bootstrap y editados a conveniencia,
 en el a travez de js damos funcionalidad para redirigir a redes sociales, el registro y el modo oscuro,
 el modo oscuro cambia el color de la fuente.
-Por último, en el footer, ademas de otra vez dar un acceso rapido a la pagina de registro, estan mis redes sociales como autor de la pagina.
+ Por último, en el footer, ademas de otra vez dar un acceso rapido a la pagina de registro y a la ubicación del evento, estan mis redes sociales como autor de la pagina.
 
 
-Existe un segundo archivo register.html el cual cuenta un formulario en el que pueden enviarme un mail a mi con "tu solicitud para asistir al evento".
+ Existe un segundo archivo register.html el cual cuenta un formulario en el que pueden enviarme un mail a mi, con "tu solicitud para asistir al evento".
 
 
-Hay 2 contenedores cuyos elementos estan distribuidos con grid y un footer que también generamos con bootstrap y editamos a conveniencia.
+ Hay 2 contenedores cuyos elementos estan distribuidos con grid y un footer que también generamos con bootstrap y editamos a conveniencia.
 en el primero tenemos una invitación, con algún adelanto, fecha y hora, para esta, utilicé una imagen de fondo.
 En la segunda, tenemos un resumen de los temas que se van a ver y un mapa de como llegar, en este casó hice un fondo en degrade de 2 colores.
 
 
-En cuanto a la paleta de colores intente generar un diseño 60% azul 30%violeta y 10% blanco(o negro/gris en el modo oscuro)
+ En cuanto a la paleta de colores intente generar un diseño 60% azul 30%violeta y 10% blanco(o negro/gris en el modo oscuro)
 podríamos decir que hay un poco de von restorff efect en cuanto al diseño del primer contenedor dandole prioridad al cuadro que ocupa mas espacio
 intenté darle un buen tamaño a los botones como indica la ley de fitt
 la mayoria de los campos se completan manualmente, y no dan opciones como sugiere la ley de hick
